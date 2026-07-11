@@ -1,0 +1,15 @@
+# Code source privé (ne pas publier sur GitHub)
+ConfigScan.source.py
+encrypt_files.py
+encrypt_files.source.py
+
+# Fichiers chiffrés
+*.enc
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/

@@ -1,52 +1,27 @@
-# Normalisation des fins de ligne
-* text=auto eol=lf
+# Détection automatique des fichiers texte
+* text=auto
 
-# Python
-*.py      text eol=lf diff=python
-*.pyi     text eol=lf
-*.pyx     text eol=lf
-*.pxd     text eol=lf
-*.pxi     text eol=lf
+# Code source — affiché comme Python sur GitHub
+*.py      text diff=python linguist-language=Python
 
-# Bytecode / binaires Python
-*.pyc     binary
-*.pyo     binary
-*.pyd     binary
-*.whl     binary
-*.egg     binary
+# Documentation — ne compte pas dans les stats de langage
+*.md      text diff=markdown linguist-documentation
 
-# Jupyter
-*.ipynb   text eol=lf linguist-documentation
+# Scripts Windows
+*.bat     text eol=crlf linguist-documentation
+*.cmd     text eol=crlf linguist-documentation
+*.ps1     text eol=crlf linguist-documentation
 
-# Config & données texte
-*.toml    text
-*.cfg     text
-*.ini     text
-*.yaml    text
-*.yml     text
-*.json    text
-*.md      text diff=markdown
-*.txt     text
-
-# Scripts
-*.sh      text eol=lf
-*.bat     text eol=crlf
-*.ps1     text eol=crlf
-
-# Binaires courants
+# Fichiers binaires — exclus des stats de langage
+*.exe     binary linguist-generated=true
+*.dll     binary linguist-generated=true
+*.pdb     binary linguist-generated=true
+*.enc     binary linguist-generated=true
+*.ico     binary
 *.png     binary
 *.jpg     binary
 *.jpeg    binary
 *.gif     binary
-*.ico     binary
-*.pdf     binary
+*.webp    binary
 *.zip     binary
-*.gz      binary
-*.tar     binary
-*.exe     binary
-*.dll     binary
-*.so      binary
-
-# Dossiers à ignorer dans les stats GitHub (optionnel)
-# docs/**   linguist-documentation
-# vendor/** linguist-vendored
+*.7z      binary
