@@ -1,0 +1,52 @@
+# Normalisation des fins de ligne
+* text=auto eol=lf
+
+# Python
+*.py      text eol=lf diff=python
+*.pyi     text eol=lf
+*.pyx     text eol=lf
+*.pxd     text eol=lf
+*.pxi     text eol=lf
+
+# Bytecode / binaires Python
+*.pyc     binary
+*.pyo     binary
+*.pyd     binary
+*.whl     binary
+*.egg     binary
+
+# Jupyter
+*.ipynb   text eol=lf linguist-documentation
+
+# Config & données texte
+*.toml    text
+*.cfg     text
+*.ini     text
+*.yaml    text
+*.yml     text
+*.json    text
+*.md      text diff=markdown
+*.txt     text
+
+# Scripts
+*.sh      text eol=lf
+*.bat     text eol=crlf
+*.ps1     text eol=crlf
+
+# Binaires courants
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.pdf     binary
+*.zip     binary
+*.gz      binary
+*.tar     binary
+*.exe     binary
+*.dll     binary
+*.so      binary
+
+# Dossiers à ignorer dans les stats GitHub (optionnel)
+# docs/**   linguist-documentation
+# vendor/** linguist-vendored
